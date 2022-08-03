@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- left -->
+        <div class="left-container">
+            <img id="left-img" src="signup.jpg" alt="image landing page">
+            <div class="heading">
+                <img id="icon" src="odin-lined.png" alt="heading image">
+                <h1>Sign-up Form</h1>
+            </div>
+            <p class="credit">Photo by <a class="image-credit" href="https://unsplash.com/@p_kuzovkova">Polina kuzovkova</a> on <a class="image-credit" href="https://unsplash.com/">unsplash</a></p>
+        </div>
+        <!-- right -->
+        <div class="right-container">
+            <div class="text-container">
+                <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="text">Sign up <span>now</span> to get started</p><br>
+                <p class="text">You know you want to.</p>
+            </div>
+            <div class="form-container">
+                <h2>Let's do this!</h2>
+                <form id="sign-up-form" action="">
+                    <label for="first-name">First Name: 
+                        <input type="text" id="first-name" name="first-name" required>
+                        <div class="error" id="first-name-error"></div>
+                    </label>
+                    <label for="last-name">Last Name: 
+                        <input type="text" id="lastname" name="last-name" required>
+                        <div class="error" id="last-name-error"></div>
+                    </label>
+                    <label for="email">Email: 
+                        <input type="email" id="email" name="email" required>
+                        <div class="error" id="email-error"></div>
+                    </label>
+                    <label for="first-name">Phone Number:  
+                        <input type="tel" id="phone-number" name="phone-number" required>
+                        <div class="error" id="phone-number-error"></div>
+                    </label>
+                    <label for="password">Password:  
+                        <input type="password" id="password" name="password" required>
+                        <div class="error" id="password-error"></div>
+                    </label>
+                    <label for="confirm-password">Confirm password:  
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <div class="error" id="confirm-password-error"></div>
+                    </label>
+                </form>
+            </div>
+            <div class="submit-section">
+                <button type="submit" form="sign-up-form">Create Account</button>
+                <p class="footer">Aready have an account? <a class="log-in" href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

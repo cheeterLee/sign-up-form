@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: "Open sans", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* left */
+.left-container {
+    position: relative;
+}
+
+#left-img {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+.heading {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    width: 8rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.credit {
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    color: white;
+}
+
+.image-credit {
+    color: white;
+}
+
+/* right */
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* section 1 */
+.text-container {
+    padding: 30px;
+    background-color: rgb(188, 194, 194);
+    height: 30vh;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+span {
+    font-style: italic;
+}
+
+/* section 2 */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    padding: 15px;
+    margin: 0
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+    row-gap: 20px;
+    column-gap: 70px;
+    padding: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input { 
+    border-radius: 5px;
+    border: 1px solid rgb( 224, 224, 224);
+    padding: 5px;
+}
+
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100)
+  }
+  
+input:focus:valid {
+    border: rgb(0, 183, 255) 2px solid;
+}
+  
+.error {
+    font-size: .5rem;
+    color: rgb(255, 69, 100);
+    position: absolute;
+}
+
+/* section 3 */
+.submit-section {
+    height: 20vh;
+    background-color: rgb(188, 194, 194);
+    padding: 20px;
+}
+
+button {
+    padding: .8rem 1.3rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2p 5px green;
+}
+
+button:hover {
+    background-color: rgb(82, 87, 82);
+}
+
+.log-in {
+    color: black;
+}
